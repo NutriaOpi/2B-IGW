@@ -1,118 +1,129 @@
 /* Estilos generales */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #4b4bf5;
+    line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
-/* Header con animación multicolor */
+/* Header y navegación */
 header {
-    background: linear-gradient(270deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #2b65ff, #8000ff, #ff0080);
-    background-size: 1500% 1500%;
-    color: #fff;
-    padding: 20px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
+    padding: 20px 10px;
     text-align: center;
-    animation: gradientAnimation 10s ease infinite;
+    animation: rainbow 5s infinite linear;
 }
 
-header h1 {
-    margin: 0;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+@keyframes rainbow {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 10px;
+    display: inline;
 }
 
 nav ul li a {
-    color: #3884f7;
     text-decoration: none;
-    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color: #f5f5f5;
-    border-radius: 5px;
+    text-decoration: underline;
 }
 
-/* Main */
+/* Footer */
+footer {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    animation: rainbow 5s infinite linear;
+}
+
+/* Main content */
 main {
     padding: 20px;
-    margin: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
 }
 
 section {
-    margin-bottom: 20px;
-}
-
-article {
-    margin-bottom: 10px;
-    padding: 10px;
+    margin: 20px 0;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background: white;
 }
 
-article h2 {
-    margin: 0 0 10px;
+section h2 {
+    margin-top: 0;
+}
+
+/* Formulario */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Galería de imágenes y videos */
+section div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section div img, section div video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
 /* Aside */
 aside {
     padding: 20px;
-    margin: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    border-radius: 5px;
 }
 
 aside h3 {
     margin-top: 0;
-}
-
-aside ul {
-    list-style: square;
-    padding-left: 20px;
-}
-
-/* Footer con animación multicolor */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(270deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #2b65ff, #8000ff, #ff0080);
-    background-size: 1500% 1500%;
-    color: #fff;
-    margin-top: 20px;
-    animation: gradientAnimation 10s ease infinite;
-}
-
-footer a {
-    color: #00aced;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
