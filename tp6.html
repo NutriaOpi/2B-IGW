@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo practico numero 6</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #add8e6; /* Color de fondo azul clarito */ /* Color de fondo */
+            font-family: Arial, Helvetica, sans-serif; /* Fuente de la letra */
+            font-size: 18px; /* Tamaño del texto */
+            text-align: center; /* Alineación del texto */
+            margin: 0;
+            padding: 0;
+        }
+
+        header, section, footer {
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 800px;
+        }
+
+        ul, ol {
+            text-align: left; /* Alineación de listas a la izquierda */
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-block;
+        }
+
+        /* Estilos para enlaces */
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #005f99;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #003f66;
+        }
+
+        /* Estilos para botones */
+        button {
+            background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #2b65ff, #8000ff, #ff0080);
+            background-size: 300% 300%;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            animation: gradientShift 5s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        button:hover {
+            background-color: #005f99;
+        }
+
+        button:active {
+            background-color: #003f66;
+        }
+            /* Estilos para el menú de navegación */
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #007acc;
+            padding: 10px;
+            list-style: none;
+            margin: 0;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #ffeb00;
+        }
+
+        /* Estilos para el formulario de contacto */
+        #contact-form {
+            margin: 20px auto;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact-form input[type="submit"] {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #contact-form input[type="submit"]:hover {
+            background-color: #005f99;
+        }
+
+        #contact-form textarea {
+            height: 100px;
+        }
+
+        /* Combinación de selectores */
+        header h1 {
+            color: #003f66;
+        }
+
+        footer ul li a {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Encabezados -->
+    <header>
+        <h1>Fundamentos de CSS</h1>
+        <h2>El css sirve para la estetica de una pagina, para que no sea tan fea y aparte agrega unas funciones que dejan la pagina impecable</h2>
+    </header>
+
+    <!-- Sección de párrafos -->
+    <section>
+        <p>En esta pagina, veras diferentes funciones de CSS</p>
+        <p>Esta pagina fue hecha con ayuda de una IA (ChatGPT)</p>
+    </section>
+
+    <!-- Lista desordenada -->
+    <section>
+        <h3>Esta es una lista desordenada de css</h3>
+        <p>Una lista desordenada puede servirte para poner los ingredientes de una receta: </p>
+        <ul>
+            <li>1 cda. de café instantáneo</li>
+            <li>1 lata de leche condensada (400 ml)</li>
+            <li>400 ml. de crema de leche</li>
+            <li>1 cda. de café instantáneo para decorar</li>
+        </ul>
+    </section>
+
+    <!-- Lista ordenada -->
+    <section>
+        <h3>Esta es una lista ordenada</h3>
+        <P>puede servirte para enseñar recetas tal que asi: (receta de Mousse de cafe) </P>
+        <ol>
+            <li>Cocinar el café instantáneo y la leche condensada en una olla a fuego medio/bajo por 4 minutos.</li>
+            <li>Refrigerar por 30 minutos.</li>
+            <li>Luego agregar la crema de leche.</li>
+            <li>Batir con la batidora eléctrica por 5 minutos.</li>
+            <li>Espolvorear con café instantáneo.</li>
+        </ol>
+    </section>
+
+    <!-- Enlaces -->
+    <footer>
+        <h3>Estos son los enlaces, para visitar diferentes paginas</h3>
+        <p>Visita los siguientes sitios web para más información:</p>
+        <ul>
+            <li><a href="https://es.tastemade.com/videos/mousse-de-cafe/" target="_blank">Pagina de la receta de mousse de cafe</a></li>
+            <li><a href="https://es.tastemade.com/recetas/Recetas-en-3-Pasos/" target="_blank">Pagina de recetas</a></li>
+        </ul>
+        <button id="colorButton">Haz clic aquí</button>
+    </footer>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+        <h3>Contáctanos</h3>
+        <form id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+<script>
+        const body = document.querySelector('body');
+        const button = document.getElementById('colorButton');
+
+        const colors = ['#32CD32', '#FFFF00', '#FF0000', 'linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #2b65ff, #8000ff, #ff0080)'];
+        let currentColorIndex = -1;
+        let isDefaultColor = true;
+        const defaultColor = '#add8e6';
+
+        button.addEventListener('click', () => {
+            if (isDefaultColor) {
+                currentColorIndex = (currentColorIndex + 1) % colors.length;
+                const nextColor = colors[currentColorIndex];
+                body.style.background = nextColor;
+                body.style.backgroundSize = nextColor.includes('linear-gradient') ? '300% 300%' : '';
+                isDefaultColor = false;
+            } else {
+                body.style.background = defaultColor;
+                isDefaultColor = true;
+            }
+        });
+    </script>
+</body>
+</html>
