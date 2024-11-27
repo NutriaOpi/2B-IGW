@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f8ff;
+        }
+
+        .container {
+            display: flex;
+            border: 2px solid #007BFF;
+            margin: 20px;
+            padding: 10px;
+            width: 80%;
+            height: 200px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #4CAF50;
+            background-color: #e0f7fa;
+            color: #007BFF;
+            font-size: 1.2rem;
+            margin: 5px;
+            flex: 1;
+        }
+
+        .flexibility {
+            display: flex;
+            border: 2px solid #FF5722;
+            margin: 20px;
+            padding: 10px;
+            width: 80%;
+            height: 200px;
+        }
+
+        .flex-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #FF9800;
+            background-color: #fff3e0;
+            color: #FF5722;
+            font-size: 1.2rem;
+            margin: 5px;
+        }
+
+        .flex-item:first-child {
+            flex: 1;
+        }
+
+        .flex-item:nth-child(2) {
+            flex: 5;
+        }
+
+        .flex-item:last-child {
+            flex: 3;
+        }
+
+        .order {
+            display: flex;
+            border: 2px solid #673AB7;
+            margin: 20px;
+            padding: 10px;
+            width: 80%;
+            height: 200px;
+        }
+
+        .order-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #D1C4E9;
+            background-color: #ede7f6;
+            color: #673AB7;
+            font-size: 1.2rem;
+            margin: 5px;
+        }
+
+        .order-item:first-child {
+            order: 3;
+        }
+
+        .order-item:nth-child(2) {
+            order: 1;
+        }
+
+        .order-item:last-child {
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabajo Práctico: CSS Flexbox</h1>
+
+    <!-- Ejercicio 1 -->
+    <section>
+        <h2>Ejercicio 1: Centrado y Distribución</h2>
+        <div class="container">
+            <div class="item">Elemento 1</div>
+            <div class="item">Elemento 2</div>
+            <div class="item">Elemento 3</div>
+        </div>
+    </section>
+
+    <!-- Ejercicio 2 -->
+    <section>
+        <h2>Ejercicio 2: Flexibilidad</h2>
+        <div class="flexibility">
+            <div class="flex-item">Elemento 1</div>
+            <div class="flex-item">Elemento 2</div>
+            <div class="flex-item">Elemento 3</div>
+        </div>
+    </section>
+
+    <!-- Ejercicio 3 -->
+    <section>
+        <h2>Ejercicio 3: Orden de Elementos</h2>
+        <div class="order">
+            <div class="order-item">Elemento 1</div>
+            <div class="order-item">Elemento 2</div>
+            <div class="order-item">Elemento 3</div>
+        </div>
+    </section>
+</body>
+</html>
