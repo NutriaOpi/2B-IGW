@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodegon: El Gordo Tony</title>
+
+</head>
+<body>
+    
+    <h1>Menu Del Tony</h1>
+    
+    <table>
+       <thead>
+        <tr>
+            <th>Nombre del plato</th>
+            <th>Descripción</th>
+            <th>Precio (ARS)</th>
+        </tr>
+
+        </thead>
+       <tbody>
+        <tr>
+            <td>Milanesa napolitana con fritas</td>
+            
+            <td>2 milanesas de pollo enormes con una montaña de papas fritas francesas</td>
+            
+            <td>20.000$ ars (Descuento del 20% con efectivo)</td>
+        
+        </tr>
+
+        <tr> 
+            <td>Asado completo</td>
+            
+            <td>Contiene: Carne de vaca, Chorizo, Morcilla, Chinchulin</td>
+            
+            <td>32.000$ ars (Descuento del 20% con efectivo)</td>  
+            
+        
+        </tr>    
+        
+        <tr> 
+            <td>Milanesas a Caballo con fritas</td>
+            
+            <td>Milanesas de carne o pollo con 4 huevos por encima con un plato de papa fritas</td>
+            
+            <td>24.000$ ars (Descuento del 20% con efectivo)</td>  
+              
+          
+        </tr> 
+        
+        <tr> 
+            <td>Pizza del Gordo Tony</td>
+            
+            <td>Pizza con Queso parmesano, carne de res por encima con aceitunas y relleno de queso en los bordes </td>
+            
+            <td>35.000$ ars (Descuento del 20% con efectivo)</td>  
+              
+          
+        </tr>
+        
+        <tr> 
+            <td>Fideos con Boloñesa</td>
+            
+            <td>Fideos Espagueti caseros con una salsa boloñesa casera</td>
+            
+            <td>15.000$ ars (Descuento del 20% con efectivo)</td>  
+              
+          
+        </tr>  
+       </tbody>
+    </table>
+    
+    <h2>Si desea reservar, complete el siguiente formulario</h2>
+
+    <form action="#">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="personas">Cantidad de personas:</label>
+        <input type="number" id="personas" name="personas" min="1" required>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+ <br>
+        <label for="comentarios">Comentarios (opcional):</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+
+        <button type="submit">Enviar reserva</button>
+    </form>
+ 
+
+
+
+    
+</body>
+</html>
