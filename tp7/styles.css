@@ -1,0 +1,114 @@
+/* Estilos generales para la página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente de texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    background-color: #4b4bf5; /* Color de fondo de la página */
+}
+
+/* Estilos para el header con animación de fondo */
+header {
+    background: linear-gradient(270deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #2b65ff, #8000ff, #ff0080); /* Degradado de colores */
+    background-size: 1500% 1500%; /* Tamaño del fondo animado */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    animation: gradientAnimation 10s ease infinite; /* Animación del fondo */
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen */
+}
+
+/* Animación para el fondo del header y footer */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilos de la barra de navegación */
+nav ul {
+    list-style: none; /* Elimina los estilos de lista */
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+nav ul li {
+    margin: 0 10px; /* Espaciado entre elementos */
+}
+
+nav ul li a {
+    color: #3884f7; /* Color del texto */
+    text-decoration: none; /* Elimina subrayado */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
+nav ul li a:hover {
+    background-color: #f5f5f5; /* Color de fondo al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Margen alrededor del contenido */
+    border: 1px solid #ddd; /* Borde sutil */
+    background-color: #fff; /* Fondo blanco */
+}
+
+section {
+    margin-bottom: 20px; /* Espaciado entre secciones */
+}
+
+article {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+article h2 {
+    margin: 0 0 10px; /* Espaciado debajo del título */
+}
+
+/* Estilos de la sección lateral (aside) */
+aside {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+aside h3 {
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+aside ul {
+    list-style: square; /* Viñetas cuadradas */
+    padding-left: 20px; /* Espaciado a la izquierda */
+}
+
+/* Estilos para el footer con animación */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(270deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #2b65ff, #8000ff, #ff0080); /* Mismo degradado que en el header */
+    background-size: 1500% 1500%;
+    color: #fff;
+    margin-top: 20px;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+footer a {
+    color: #00aced; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
