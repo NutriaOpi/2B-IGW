@@ -1,129 +1,129 @@
-/* Estilos generales */
+/* Estilos generales de la página */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente del texto */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+    line-height: 1.6; /* Define el espaciado entre líneas */
+    background-color: #f9f9f9; /* Color de fondo gris claro */
 }
 
-/* Header y navegación */
+/* Estilos para el encabezado y la navegación */
 header {
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-    color: white;
-    padding: 20px 10px;
-    text-align: center;
-    animation: rainbow 5s infinite linear;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet); /* Fondo con degradado arcoíris */
+    color: white; /* Color del texto */
+    padding: 20px 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    animation: rainbow 5s infinite linear; /* Aplica una animación de desplazamiento de color */
 }
 
-@keyframes rainbow {
+@keyframes rainbow { /* definir una animación. Específica los estados intermedios de una animación mediante un porcentaje que indica en qué momento de la animacion debe aplicarse un conjunto de estilos */
     0% { background-position: 0%; }
     100% { background-position: 100%; }
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; /* Elimina estilos de lista */
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espaciado entre los elementos de la lista */
 }
 
 nav ul li {
-    display: inline;
+    display: inline; /* Muestra los elementos en línea */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+    text-decoration: none; /* Elimina subrayado */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Hace el texto en negrita */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse */
 }
 
-/* Footer */
+/* Estilos para el pie de página */
 footer {
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    animation: rainbow 5s infinite linear;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet); /* Mismo fondo que el header */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Espaciado interno */
+    animation: rainbow 5s infinite linear; /* Aplica la animación de color */
 }
 
-/* Main content */
+/* Contenido principal */
 main {
-    padding: 20px;
+    padding: 20px; /* Espaciado interno */
 }
 
 section {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: white;
+    margin: 20px 0; /* Margen entre secciones */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background: white; /* Fondo blanco */
 }
 
 section h2 {
-    margin-top: 0;
+    margin-top: 0; /* Elimina el margen superior del título */
 }
 
-/* Formulario */
+/* Estilos para los formularios */
 form div {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Espaciado entre los campos del formulario */
 }
 
 form label {
-    display: block;
+    display: block; /* Hace que las etiquetas ocupen toda la línea */
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: bold; /* Texto en negrita */
 }
 
 form input, form textarea, form button {
-    width: 100%;
+    width: 100%; /* Ocupar todo el ancho disponible */
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Mantiene el tamaño correcto incluyendo relleno y bordes */
 }
 
 form button {
-    background: #007BFF;
-    color: white;
+    background: #007BFF; /* Color de fondo azul */
+    color: white; /* Texto blanco */
     font-size: 16px;
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
     border: none;
 }
 
 form button:hover {
-    background: #0056b3;
+    background: #0056b3; /* Color azul más oscuro al pasar el mouse */
 }
 
-/* Galería de imágenes y videos */
+/* Estilos para la galería de imágenes y videos */
 section div {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 10px; /* Espaciado entre elementos */
+    flex-wrap: wrap; /* Permite que los elementos pasen a una nueva línea si no caben */
+    justify-content: center; /* Centra los elementos */
 }
 
 section div img, section div video {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+    max-width: 100%; /* Ajusta el tamaño máximo al contenedor */
+    height: auto; /* Mantiene la proporción */
+    border: 2px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
-/* Aside */
+/* Estilos para el contenido adicional (aside) */
 aside {
     padding: 20px;
-    border: 1px solid #ccc;
-    background: #f1f1f1;
-    border-radius: 5px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    background: #f1f1f1; /* Fondo gris claro */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 aside h3 {
-    margin-top: 0;
+    margin-top: 0; /* Elimina el margen superior */
 }
