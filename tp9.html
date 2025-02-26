@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Inicio del documento HTML, se especifica el idioma español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo Práctico Flexbox</title>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres para soportar caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    <title>Trabajo Práctico Flexbox</title> <!-- Título de la pestaña del navegador -->
     <style>
+        /* Estilos generales para la página */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #f0f8ff;
+            font-family: Arial, sans-serif; /* Fuente de texto */
+            margin: 0; /* Elimina el margen por defecto */
+            padding: 0; /* Elimina el padding por defecto */
+            display: flex; /* Usa flexbox para centrar elementos */
+            flex-direction: column; /* Alinea elementos en columna */
+            align-items: center; /* Centra los elementos horizontalmente */
+            justify-content: center; /* Centra los elementos verticalmente */
+            min-height: 100vh; /* Altura mínima del viewport */
+            background-color: #f0f8ff; /* Color de fondo */
         }
 
+        /* Contenedor principal del ejercicio 1 */
         .container {
-            display: flex;
-            border: 2px solid #007BFF;
-            margin: 20px;
-            padding: 10px;
-            width: 80%;
-            height: 200px;
+            display: flex; /* Usa flexbox */
+            border: 2px solid #007BFF; /* Borde azul */
+            margin: 20px; /* Margen alrededor */
+            padding: 10px; /* Espaciado interno */
+            width: 80%; /* Ancho del contenedor */
+            height: 200px; /* Altura fija */
         }
 
+        /* Estilos para los elementos dentro del contenedor */
         .item {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #4CAF50;
-            background-color: #e0f7fa;
-            color: #007BFF;
-            font-size: 1.2rem;
-            margin: 5px;
-            flex: 1;
+            align-items: center; /* Centra verticalmente */
+            justify-content: center; /* Centra horizontalmente */
+            border: 1px solid #4CAF50; /* Borde verde */
+            background-color: #e0f7fa; /* Fondo celeste */
+            color: #007BFF; /* Color del texto azul */
+            font-size: 1.2rem; /* Tamaño de fuente */
+            margin: 5px; /* Margen entre elementos */
+            flex: 1; /* Cada elemento ocupa el mismo espacio */
         }
 
+        /* Contenedor del ejercicio 2 con diferentes flex */
         .flexibility {
             display: flex;
-            border: 2px solid #FF5722;
+            border: 2px solid #FF5722; /* Borde naranja */
             margin: 20px;
             padding: 10px;
             width: 80%;
@@ -51,28 +55,30 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid #FF9800;
-            background-color: #fff3e0;
-            color: #FF5722;
+            border: 1px solid #FF9800; /* Borde amarillo */
+            background-color: #fff3e0; /* Fondo crema */
+            color: #FF5722; /* Color de texto */
             font-size: 1.2rem;
             margin: 5px;
         }
 
+        /* Asignación de tamaños flexibles a los elementos */
         .flex-item:first-child {
-            flex: 1;
+            flex: 1; /* Toma el menor espacio posible */
         }
 
         .flex-item:nth-child(2) {
-            flex: 5;
+            flex: 5; /* Toma mucho más espacio que los demás */
         }
 
         .flex-item:last-child {
-            flex: 3;
+            flex: 3; /* Ocupa un espacio intermedio */
         }
 
+        /* Contenedor para el ejercicio 3 con orden personalizado */
         .order {
             display: flex;
-            border: 2px solid #673AB7;
+            border: 2px solid #673AB7; /* Borde morado */
             margin: 20px;
             padding: 10px;
             width: 80%;
@@ -90,23 +96,24 @@
             margin: 5px;
         }
 
+        /* Modificación del orden de los elementos */
         .order-item:first-child {
-            order: 3;
+            order: 3; /* Este será el último */
         }
 
         .order-item:nth-child(2) {
-            order: 1;
+            order: 1; /* Este será el primero */
         }
 
         .order-item:last-child {
-            order: 2;
+            order: 2; /* Este será el segundo */
         }
     </style>
 </head>
 <body>
-    <h1>Trabajo Práctico: CSS Flexbox</h1>
+    <h1>Trabajo Práctico: CSS Flexbox</h1> <!-- Título principal -->
 
-    <!-- Ejercicio 1 -->
+    <!-- Ejercicio 1: Distribución uniforme -->
     <section>
         <h2>Ejercicio 1: Centrado y Distribución</h2>
         <div class="container">
@@ -116,7 +123,7 @@
         </div>
     </section>
 
-    <!-- Ejercicio 2 -->
+    <!-- Ejercicio 2: Elementos con diferentes proporciones -->
     <section>
         <h2>Ejercicio 2: Flexibilidad</h2>
         <div class="flexibility">
@@ -126,7 +133,7 @@
         </div>
     </section>
 
-    <!-- Ejercicio 3 -->
+    <!-- Ejercicio 3: Cambiar orden de los elementos -->
     <section>
         <h2>Ejercicio 3: Orden de Elementos</h2>
         <div class="order">
